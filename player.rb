@@ -1,4 +1,4 @@
-class player
+class Player
   attr_accessor :life
   attr_reader :name
 
@@ -7,7 +7,8 @@ class player
     @life = 3
   end
 
-  def display_life
-    puts "#{life}/3"
+  def eval_answer (result)
+    self.life -= 1 unless result
   end
+
 end
